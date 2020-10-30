@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/LogoTemperoAccueil"
+            android:layout_gravity="center"
+            android:layout_width="106dp"
+            android:layout_height="174dp"
+            app:srcCompat="@drawable/logotemperocalor" />
+
+        <TextView
+            android:id="@+id/Titre_accueil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/accueil" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="458dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonSaisieReleve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:text="@string/btnSaisieReleve"
+                android:translationY="100dp" />
+
+            <Button
+                android:id="@+id/buttonListeReleve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnListeReleve"
+                android:translationY="150dp" />
+
+            <Button
+                android:id="@+id/buttonMoyenne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnMoyenneReleve"
+                android:translationY="200dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auteurs" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
