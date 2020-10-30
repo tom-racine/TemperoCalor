@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         saisirReleve.setOnClickListener(ecouteur1);
-
+        // Accès au menu d'affichage des relevés
         Button listeReleve = findViewById(R.id.buttonListeReleve);
         View.OnClickListener ecouteur2 = new View.OnClickListener() {
             @Override
